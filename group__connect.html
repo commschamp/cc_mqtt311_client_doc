@@ -89,9 +89,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:gac539f4d0d8be87572e690aaf4e308373"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__connect.html#gac539f4d0d8be87572e690aaf4e308373">CC_Mqtt311ConnectCompleteCb</a>) (void *data, <a class="el" href="group__global.html#gaf6bdf774d2591a042326994e6b10c7bd">CC_Mqtt311AsyncOpStatus</a> status, const <a class="el" href="structCC__Mqtt311ConnectResponse.html">CC_Mqtt311ConnectResponse</a> *response)</td></tr>
 <tr class="memdesc:gac539f4d0d8be87572e690aaf4e308373"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback used to report completion of the "connect" operation.  <a href="group__connect.html#gac539f4d0d8be87572e690aaf4e308373">More...</a><br /></td></tr>
 <tr class="separator:gac539f4d0d8be87572e690aaf4e308373"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6ece23023427df7f6cad8cc2974cfbd3"><td class="memItemLeft" align="right" valign="top">typedef CC_Mqtt311Connect *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__connect.html#ga6ece23023427df7f6cad8cc2974cfbd3">CC_Mqtt311ConnectHandle</a></td></tr>
-<tr class="memdesc:ga6ece23023427df7f6cad8cc2974cfbd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle for "connect" operation.  <a href="group__connect.html#ga6ece23023427df7f6cad8cc2974cfbd3">More...</a><br /></td></tr>
-<tr class="separator:ga6ece23023427df7f6cad8cc2974cfbd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf133f20058dfed6db4a483cc3b1c69fd"><td class="memItemLeft" align="right" valign="top">typedef struct CC_Mqtt311Connect *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__connect.html#gaf133f20058dfed6db4a483cc3b1c69fd">CC_Mqtt311ConnectHandle</a></td></tr>
+<tr class="memdesc:gaf133f20058dfed6db4a483cc3b1c69fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle for "connect" operation.  <a href="group__connect.html#gaf133f20058dfed6db4a483cc3b1c69fd">More...</a><br /></td></tr>
+<tr class="separator:gaf133f20058dfed6db4a483cc3b1c69fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -111,19 +111,19 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga7b6710338078461783590b1c23b312e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__global.html#ga1313593e8ce828061e8d32ae56c23d4e">CC_Mqtt311ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__connect.html#ga7b6710338078461783590b1c23b312e5">cc_mqtt311_client_connect</a> (<a class="el" href="group__client.html#gab094fc745d2d398d063d01d121750fc2">CC_Mqtt311ClientHandle</a> handle, const <a class="el" href="structCC__Mqtt311ConnectConfig.html">CC_Mqtt311ConnectConfig</a> *config, const <a class="el" href="structCC__Mqtt311ConnectWillConfig.html">CC_Mqtt311ConnectWillConfig</a> *willConfig, <a class="el" href="group__connect.html#gac539f4d0d8be87572e690aaf4e308373">CC_Mqtt311ConnectCompleteCb</a> cb, void *cbData)</td></tr>
+<tr class="memitem:ga7b6710338078461783590b1c23b312e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__global.html#ga1313593e8ce828061e8d32ae56c23d4e">CC_Mqtt311ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__connect.html#ga7b6710338078461783590b1c23b312e5">cc_mqtt311_client_connect</a> (<a class="el" href="group__client.html#gab383150a0964cf3bd041a858f203040f">CC_Mqtt311ClientHandle</a> handle, const <a class="el" href="structCC__Mqtt311ConnectConfig.html">CC_Mqtt311ConnectConfig</a> *config, const <a class="el" href="structCC__Mqtt311ConnectWillConfig.html">CC_Mqtt311ConnectWillConfig</a> *willConfig, <a class="el" href="group__connect.html#gac539f4d0d8be87572e690aaf4e308373">CC_Mqtt311ConnectCompleteCb</a> cb, void *cbData)</td></tr>
 <tr class="memdesc:ga7b6710338078461783590b1c23b312e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare, configure, and send "connect" request in one go.  <a href="group__connect.html#ga7b6710338078461783590b1c23b312e5">More...</a><br /></td></tr>
 <tr class="separator:ga7b6710338078461783590b1c23b312e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9563e04808684f032a741a074b728413"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__global.html#ga1313593e8ce828061e8d32ae56c23d4e">CC_Mqtt311ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__connect.html#ga9563e04808684f032a741a074b728413">cc_mqtt311_client_connect_cancel</a> (<a class="el" href="group__connect.html#ga6ece23023427df7f6cad8cc2974cfbd3">CC_Mqtt311ConnectHandle</a> handle)</td></tr>
+<tr class="memitem:ga9563e04808684f032a741a074b728413"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__global.html#ga1313593e8ce828061e8d32ae56c23d4e">CC_Mqtt311ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__connect.html#ga9563e04808684f032a741a074b728413">cc_mqtt311_client_connect_cancel</a> (<a class="el" href="group__connect.html#gaf133f20058dfed6db4a483cc3b1c69fd">CC_Mqtt311ConnectHandle</a> handle)</td></tr>
 <tr class="memdesc:ga9563e04808684f032a741a074b728413"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel the allocated "connect" operation.  <a href="group__connect.html#ga9563e04808684f032a741a074b728413">More...</a><br /></td></tr>
 <tr class="separator:ga9563e04808684f032a741a074b728413"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad84a395dd590d67671bfee7250b67d06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__global.html#ga1313593e8ce828061e8d32ae56c23d4e">CC_Mqtt311ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__connect.html#gad84a395dd590d67671bfee7250b67d06">cc_mqtt311_client_connect_config</a> (<a class="el" href="group__connect.html#ga6ece23023427df7f6cad8cc2974cfbd3">CC_Mqtt311ConnectHandle</a> handle, const <a class="el" href="structCC__Mqtt311ConnectConfig.html">CC_Mqtt311ConnectConfig</a> *config)</td></tr>
+<tr class="memitem:gad84a395dd590d67671bfee7250b67d06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__global.html#ga1313593e8ce828061e8d32ae56c23d4e">CC_Mqtt311ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__connect.html#gad84a395dd590d67671bfee7250b67d06">cc_mqtt311_client_connect_config</a> (<a class="el" href="group__connect.html#gaf133f20058dfed6db4a483cc3b1c69fd">CC_Mqtt311ConnectHandle</a> handle, const <a class="el" href="structCC__Mqtt311ConnectConfig.html">CC_Mqtt311ConnectConfig</a> *config)</td></tr>
 <tr class="memdesc:gad84a395dd590d67671bfee7250b67d06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform basic configuration of the "connect" operation.  <a href="group__connect.html#gad84a395dd590d67671bfee7250b67d06">More...</a><br /></td></tr>
 <tr class="separator:gad84a395dd590d67671bfee7250b67d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7ff969e033bf208cd3b22c968961602b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__global.html#ga1313593e8ce828061e8d32ae56c23d4e">CC_Mqtt311ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__connect.html#ga7ff969e033bf208cd3b22c968961602b">cc_mqtt311_client_connect_config_will</a> (<a class="el" href="group__connect.html#ga6ece23023427df7f6cad8cc2974cfbd3">CC_Mqtt311ConnectHandle</a> handle, const <a class="el" href="structCC__Mqtt311ConnectWillConfig.html">CC_Mqtt311ConnectWillConfig</a> *config)</td></tr>
+<tr class="memitem:ga7ff969e033bf208cd3b22c968961602b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__global.html#ga1313593e8ce828061e8d32ae56c23d4e">CC_Mqtt311ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__connect.html#ga7ff969e033bf208cd3b22c968961602b">cc_mqtt311_client_connect_config_will</a> (<a class="el" href="group__connect.html#gaf133f20058dfed6db4a483cc3b1c69fd">CC_Mqtt311ConnectHandle</a> handle, const <a class="el" href="structCC__Mqtt311ConnectWillConfig.html">CC_Mqtt311ConnectWillConfig</a> *config)</td></tr>
 <tr class="memdesc:ga7ff969e033bf208cd3b22c968961602b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform will configuration of the "connect" operation.  <a href="group__connect.html#ga7ff969e033bf208cd3b22c968961602b">More...</a><br /></td></tr>
 <tr class="separator:ga7ff969e033bf208cd3b22c968961602b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7e234f55d89b4c2a2c25c1826ebd2d28"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__connect.html#ga7e234f55d89b4c2a2c25c1826ebd2d28">cc_mqtt311_client_connect_get_response_timeout</a> (<a class="el" href="group__connect.html#ga6ece23023427df7f6cad8cc2974cfbd3">CC_Mqtt311ConnectHandle</a> handle)</td></tr>
+<tr class="memitem:ga7e234f55d89b4c2a2c25c1826ebd2d28"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__connect.html#ga7e234f55d89b4c2a2c25c1826ebd2d28">cc_mqtt311_client_connect_get_response_timeout</a> (<a class="el" href="group__connect.html#gaf133f20058dfed6db4a483cc3b1c69fd">CC_Mqtt311ConnectHandle</a> handle)</td></tr>
 <tr class="memdesc:ga7e234f55d89b4c2a2c25c1826ebd2d28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the configured the broker response timeout for the "connect" operation.  <a href="group__connect.html#ga7e234f55d89b4c2a2c25c1826ebd2d28">More...</a><br /></td></tr>
 <tr class="separator:ga7e234f55d89b4c2a2c25c1826ebd2d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7313c201b35d73d585112f2026f658b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__connect.html#ga7313c201b35d73d585112f2026f658b4">cc_mqtt311_client_connect_init_config</a> (<a class="el" href="structCC__Mqtt311ConnectConfig.html">CC_Mqtt311ConnectConfig</a> *config)</td></tr>
@@ -132,16 +132,16 @@ Functions</h2></td></tr>
 <tr class="memitem:ga94621e08d696720fcaa7db48538b4ee7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__connect.html#ga94621e08d696720fcaa7db48538b4ee7">cc_mqtt311_client_connect_init_config_will</a> (<a class="el" href="structCC__Mqtt311ConnectWillConfig.html">CC_Mqtt311ConnectWillConfig</a> *config)</td></tr>
 <tr class="memdesc:ga94621e08d696720fcaa7db48538b4ee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intialize the <a class="el" href="structCC__Mqtt311ConnectWillConfig.html">CC_Mqtt311ConnectWillConfig</a> configuration structure.  <a href="group__connect.html#ga94621e08d696720fcaa7db48538b4ee7">More...</a><br /></td></tr>
 <tr class="separator:ga94621e08d696720fcaa7db48538b4ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga53ad4eae41c73dff94f0b47145fd886a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__connect.html#ga6ece23023427df7f6cad8cc2974cfbd3">CC_Mqtt311ConnectHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__connect.html#ga53ad4eae41c73dff94f0b47145fd886a">cc_mqtt311_client_connect_prepare</a> (<a class="el" href="group__client.html#gab094fc745d2d398d063d01d121750fc2">CC_Mqtt311ClientHandle</a> handle, <a class="el" href="group__global.html#ga1313593e8ce828061e8d32ae56c23d4e">CC_Mqtt311ErrorCode</a> *ec)</td></tr>
+<tr class="memitem:ga53ad4eae41c73dff94f0b47145fd886a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__connect.html#gaf133f20058dfed6db4a483cc3b1c69fd">CC_Mqtt311ConnectHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__connect.html#ga53ad4eae41c73dff94f0b47145fd886a">cc_mqtt311_client_connect_prepare</a> (<a class="el" href="group__client.html#gab383150a0964cf3bd041a858f203040f">CC_Mqtt311ClientHandle</a> handle, <a class="el" href="group__global.html#ga1313593e8ce828061e8d32ae56c23d4e">CC_Mqtt311ErrorCode</a> *ec)</td></tr>
 <tr class="memdesc:ga53ad4eae41c73dff94f0b47145fd886a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare "connect" operation.  <a href="group__connect.html#ga53ad4eae41c73dff94f0b47145fd886a">More...</a><br /></td></tr>
 <tr class="separator:ga53ad4eae41c73dff94f0b47145fd886a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8946d397e9eafbe7c962b34061d5c07b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__global.html#ga1313593e8ce828061e8d32ae56c23d4e">CC_Mqtt311ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__connect.html#ga8946d397e9eafbe7c962b34061d5c07b">cc_mqtt311_client_connect_send</a> (<a class="el" href="group__connect.html#ga6ece23023427df7f6cad8cc2974cfbd3">CC_Mqtt311ConnectHandle</a> handle, <a class="el" href="group__connect.html#gac539f4d0d8be87572e690aaf4e308373">CC_Mqtt311ConnectCompleteCb</a> cb, void *cbData)</td></tr>
+<tr class="memitem:ga8946d397e9eafbe7c962b34061d5c07b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__global.html#ga1313593e8ce828061e8d32ae56c23d4e">CC_Mqtt311ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__connect.html#ga8946d397e9eafbe7c962b34061d5c07b">cc_mqtt311_client_connect_send</a> (<a class="el" href="group__connect.html#gaf133f20058dfed6db4a483cc3b1c69fd">CC_Mqtt311ConnectHandle</a> handle, <a class="el" href="group__connect.html#gac539f4d0d8be87572e690aaf4e308373">CC_Mqtt311ConnectCompleteCb</a> cb, void *cbData)</td></tr>
 <tr class="memdesc:ga8946d397e9eafbe7c962b34061d5c07b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the configured "connect" operation to broker.  <a href="group__connect.html#ga8946d397e9eafbe7c962b34061d5c07b">More...</a><br /></td></tr>
 <tr class="separator:ga8946d397e9eafbe7c962b34061d5c07b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga74df6bdc9c742003c74e94b8af102e0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__global.html#ga1313593e8ce828061e8d32ae56c23d4e">CC_Mqtt311ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__connect.html#ga74df6bdc9c742003c74e94b8af102e0c">cc_mqtt311_client_connect_set_response_timeout</a> (<a class="el" href="group__connect.html#ga6ece23023427df7f6cad8cc2974cfbd3">CC_Mqtt311ConnectHandle</a> handle, unsigned ms)</td></tr>
+<tr class="memitem:ga74df6bdc9c742003c74e94b8af102e0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__global.html#ga1313593e8ce828061e8d32ae56c23d4e">CC_Mqtt311ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__connect.html#ga74df6bdc9c742003c74e94b8af102e0c">cc_mqtt311_client_connect_set_response_timeout</a> (<a class="el" href="group__connect.html#gaf133f20058dfed6db4a483cc3b1c69fd">CC_Mqtt311ConnectHandle</a> handle, unsigned ms)</td></tr>
 <tr class="memdesc:ga74df6bdc9c742003c74e94b8af102e0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the broker response timeout for the "connect" operation.  <a href="group__connect.html#ga74df6bdc9c742003c74e94b8af102e0c">More...</a><br /></td></tr>
 <tr class="separator:ga74df6bdc9c742003c74e94b8af102e0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae1967cc34475ffae4a78eb3887387f6e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__connect.html#gae1967cc34475ffae4a78eb3887387f6e">cc_mqtt311_client_is_connected</a> (<a class="el" href="group__client.html#gab094fc745d2d398d063d01d121750fc2">CC_Mqtt311ClientHandle</a> handle)</td></tr>
+<tr class="memitem:gae1967cc34475ffae4a78eb3887387f6e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__connect.html#gae1967cc34475ffae4a78eb3887387f6e">cc_mqtt311_client_is_connected</a> (<a class="el" href="group__client.html#gab383150a0964cf3bd041a858f203040f">CC_Mqtt311ClientHandle</a> handle)</td></tr>
 <tr class="memdesc:gae1967cc34475ffae4a78eb3887387f6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the inner state of the library of whether it's connected to the broker.  <a href="group__connect.html#gae1967cc34475ffae4a78eb3887387f6e">More...</a><br /></td></tr>
 <tr class="separator:gae1967cc34475ffae4a78eb3887387f6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -172,14 +172,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga6ece23023427df7f6cad8cc2974cfbd3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6ece23023427df7f6cad8cc2974cfbd3">&#9670;&nbsp;</a></span>CC_Mqtt311ConnectHandle</h2>
+<a id="gaf133f20058dfed6db4a483cc3b1c69fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf133f20058dfed6db4a483cc3b1c69fd">&#9670;&nbsp;</a></span>CC_Mqtt311ConnectHandle</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef CC_Mqtt311Connect* <a class="el" href="group__connect.html#ga6ece23023427df7f6cad8cc2974cfbd3">CC_Mqtt311ConnectHandle</a></td>
+          <td class="memname">typedef struct CC_Mqtt311Connect* <a class="el" href="group__connect.html#gaf133f20058dfed6db4a483cc3b1c69fd">CC_Mqtt311ConnectHandle</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -232,7 +232,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="group__global.html#ga1313593e8ce828061e8d32ae56c23d4e">CC_Mqtt311ErrorCode</a> cc_mqtt311_client_connect </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__client.html#gab094fc745d2d398d063d01d121750fc2">CC_Mqtt311ClientHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__client.html#gab383150a0964cf3bd041a858f203040f">CC_Mqtt311ClientHandle</a>&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
         </tr>
         <tr>
@@ -297,7 +297,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="group__global.html#ga1313593e8ce828061e8d32ae56c23d4e">CC_Mqtt311ErrorCode</a> cc_mqtt311_client_connect_cancel </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__connect.html#ga6ece23023427df7f6cad8cc2974cfbd3">CC_Mqtt311ConnectHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__connect.html#gaf133f20058dfed6db4a483cc3b1c69fd">CC_Mqtt311ConnectHandle</a>&#160;</td>
           <td class="paramname"><em>handle</em></td><td>)</td>
           <td></td>
         </tr>
@@ -325,7 +325,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="group__global.html#ga1313593e8ce828061e8d32ae56c23d4e">CC_Mqtt311ErrorCode</a> cc_mqtt311_client_connect_config </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__connect.html#ga6ece23023427df7f6cad8cc2974cfbd3">CC_Mqtt311ConnectHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__connect.html#gaf133f20058dfed6db4a483cc3b1c69fd">CC_Mqtt311ConnectHandle</a>&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
         </tr>
         <tr>
@@ -363,7 +363,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="group__global.html#ga1313593e8ce828061e8d32ae56c23d4e">CC_Mqtt311ErrorCode</a> cc_mqtt311_client_connect_config_will </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__connect.html#ga6ece23023427df7f6cad8cc2974cfbd3">CC_Mqtt311ConnectHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__connect.html#gaf133f20058dfed6db4a483cc3b1c69fd">CC_Mqtt311ConnectHandle</a>&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
         </tr>
         <tr>
@@ -401,7 +401,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">unsigned cc_mqtt311_client_connect_get_response_timeout </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__connect.html#ga6ece23023427df7f6cad8cc2974cfbd3">CC_Mqtt311ConnectHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__connect.html#gaf133f20058dfed6db4a483cc3b1c69fd">CC_Mqtt311ConnectHandle</a>&#160;</td>
           <td class="paramname"><em>handle</em></td><td>)</td>
           <td></td>
         </tr>
@@ -478,9 +478,9 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__connect.html#ga6ece23023427df7f6cad8cc2974cfbd3">CC_Mqtt311ConnectHandle</a> cc_mqtt311_client_connect_prepare </td>
+          <td class="memname"><a class="el" href="group__connect.html#gaf133f20058dfed6db4a483cc3b1c69fd">CC_Mqtt311ConnectHandle</a> cc_mqtt311_client_connect_prepare </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__client.html#gab094fc745d2d398d063d01d121750fc2">CC_Mqtt311ClientHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__client.html#gab383150a0964cf3bd041a858f203040f">CC_Mqtt311ClientHandle</a>&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
         </tr>
         <tr>
@@ -522,7 +522,7 @@ The "connect" operation is allocated, use either <a class="el" href="group__conn
         <tr>
           <td class="memname"><a class="el" href="group__global.html#ga1313593e8ce828061e8d32ae56c23d4e">CC_Mqtt311ErrorCode</a> cc_mqtt311_client_connect_send </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__connect.html#ga6ece23023427df7f6cad8cc2974cfbd3">CC_Mqtt311ConnectHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__connect.html#gaf133f20058dfed6db4a483cc3b1c69fd">CC_Mqtt311ConnectHandle</a>&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
         </tr>
         <tr>
@@ -570,7 +570,7 @@ The provided callback will be invoked when the "connect" operation is complete <
         <tr>
           <td class="memname"><a class="el" href="group__global.html#ga1313593e8ce828061e8d32ae56c23d4e">CC_Mqtt311ErrorCode</a> cc_mqtt311_client_connect_set_response_timeout </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__connect.html#ga6ece23023427df7f6cad8cc2974cfbd3">CC_Mqtt311ConnectHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__connect.html#gaf133f20058dfed6db4a483cc3b1c69fd">CC_Mqtt311ConnectHandle</a>&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
         </tr>
         <tr>
@@ -608,7 +608,7 @@ The provided callback will be invoked when the "connect" operation is complete <
         <tr>
           <td class="memname">bool cc_mqtt311_client_is_connected </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__client.html#gab094fc745d2d398d063d01d121750fc2">CC_Mqtt311ClientHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__client.html#gab383150a0964cf3bd041a858f203040f">CC_Mqtt311ClientHandle</a>&#160;</td>
           <td class="paramname"><em>handle</em></td><td>)</td>
           <td></td>
         </tr>
