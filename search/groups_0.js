@@ -1,10 +1,4 @@
 var searchData=
 [
-  ['_22client_20data_20types_20and_20functions_22_337',['&quot;Client Data Types and Functions&quot;',['../group__client.html',1,'']]],
-  ['_22connect_20operation_20data_20type_20and_20functions_22_338',['&quot;Connect Operation Data Type and Functions&quot;',['../group__connect.html',1,'']]],
-  ['_22disconnect_20operation_20data_20type_20and_20functions_22_339',['&quot;Disconnect Operation Data Type and Functions&quot;',['../group__disconnect.html',1,'']]],
-  ['_22global_20data_20types_20and_20functions_22_340',['&quot;Global Data Types and Functions&quot;',['../group__global.html',1,'']]],
-  ['_22publish_20operation_20data_20type_20and_20functions_22_341',['&quot;Publish Operation Data Type and Functions&quot;',['../group__publish.html',1,'']]],
-  ['_22subscribe_20operation_20data_20type_20and_20functions_22_342',['&quot;Subscribe Operation Data Type and Functions&quot;',['../group__subscribe.html',1,'']]],
-  ['_22unsubscribe_20operation_20data_20type_20and_20functions_22_343',['&quot;Unsubscribe Operation Data Type and Functions&quot;',['../group__unsubscribe.html',1,'']]]
+  ['and_20functions_0',['and functions',['../group__client.html',1,'&quot;Client Data Types and Functions&quot;'],['../group__connect.html',1,'&quot;Connect Operation Data Type and Functions&quot;'],['../group__disconnect.html',1,'&quot;Disconnect Operation Data Type and Functions&quot;'],['../group__global.html',1,'&quot;Global Data Types and Functions&quot;'],['../group__publish.html',1,'&quot;Publish Operation Data Type and Functions&quot;'],['../group__subscribe.html',1,'&quot;Subscribe Operation Data Type and Functions&quot;'],['../group__unsubscribe.html',1,'&quot;Unsubscribe Operation Data Type and Functions&quot;']]]
 ];
